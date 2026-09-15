@@ -10,7 +10,7 @@ import Foundation
 // NOTES:
 // Protocol implementation with concrete implementation for the Network call
 // Protocol driven so that it decouples the concrete transport to make it unit testable with test stubs.
-protocol UploadTransport: Sendable {
+nonisolated protocol UploadTransport: Sendable {
     func upload(id: UUID, imageData: Data) async throws
 }
 

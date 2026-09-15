@@ -71,6 +71,14 @@ actor UploadManager {
         attempt(itemID: itemID, ignoreBackoff: true)
     }
 
+// NOTES:
+// Test-only convenience: awaits whatever attempts are currently in flight, so tests can assert on the resulting state deterministically instead of sleeping.
+    func waitForInFlightTasks() async {
+        for task in inFlightTasks.values {
+            await task.value
+        }
+    }
+
     private func attempt(itemID: NSManagedObjectID, ignoreBackoff: Bool = false) {
         guard inFlightTasks[itemID] == nil else { return }
         inFlightTasks[itemID] = Task { [weak self] in

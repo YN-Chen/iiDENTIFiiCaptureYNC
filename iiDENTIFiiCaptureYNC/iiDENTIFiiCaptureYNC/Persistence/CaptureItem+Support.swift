@@ -17,7 +17,7 @@ enum CaptureStatus: String {
 
 // NOTES:
 // makeInsert -> Creates and inserts a new item as .pending`, before any network call is attempted.
-extension CaptureItem {
+nonisolated extension CaptureItem {
     var captureStatus: CaptureStatus {
         get { CaptureStatus(rawValue: status ?? "") ?? .pending }
         set { status = newValue.rawValue }
@@ -35,13 +35,13 @@ extension CaptureItem {
     }
 
     static func fetchRequest(status: CaptureStatus) -> NSFetchRequest<CaptureItem> {
-        let request = CaptureItem.fetchRequest()
+        let request = NSFetchRequest<CaptureItem>(entityName: "CaptureItem")
         request.predicate = NSPredicate(format: "status == %@", status.rawValue)
         return request
     }
 
     static func allItemsSortedByCreatedAt() -> NSFetchRequest<CaptureItem> {
-        let request = CaptureItem.fetchRequest()
+        let request = NSFetchRequest<CaptureItem>(entityName: "CaptureItem")
         request.sortDescriptors = [NSSortDescriptor(keyPath: \CaptureItem.createdAt, ascending: false)]
         return request
     }

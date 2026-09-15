@@ -10,7 +10,7 @@ import CoreData
 // NOTES:
 // if the loadPersistentStores fails with error it just fatal errors for now for this POC.
 // In a finalised app it could fail gracefully to some sort of error handling screen that gets displayed in UI.
-struct PersistenceController {
+nonisolated struct PersistenceController {
     static let shared = PersistenceController()
 
     let container: NSPersistentContainer
