@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 110;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		136F250030593DFF0072EEDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 136F24EA30593DFE0072EEDF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 136F24F130593DFE0072EEDF;
+			remoteInfo = iiDENTIFiiCaptureYNC;
+		};
+		136F250A30593DFF0072EEDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 136F24EA30593DFE0072EEDF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 136F24F130593DFE0072EEDF;
+			remoteInfo = iiDENTIFiiCaptureYNC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		136F24F230593DFE0072EEDF /* iiDENTIFiiCaptureYNC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iiDENTIFiiCaptureYNC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		136F24FF30593DFF0072EEDF /* iiDENTIFiiCaptureYNCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iiDENTIFiiCaptureYNCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		136F250930593DFF0072EEDF /* iiDENTIFiiCaptureYNCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iiDENTIFiiCaptureYNCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		136F24F430593DFE0072EEDF /* iiDENTIFiiCaptureYNC */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = iiDENTIFiiCaptureYNC;
+			sourceTree = "<group>";
+		};
+		136F250230593DFF0072EEDF /* iiDENTIFiiCaptureYNCTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = iiDENTIFiiCaptureYNCTests;
+			sourceTree = "<group>";
+		};
+		136F250C30593DFF0072EEDF /* iiDENTIFiiCaptureYNCUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = iiDENTIFiiCaptureYNCUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		136F24EF30593DFE0072EEDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		136F24FC30593DFF0072EEDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		136F250630593DFF0072EEDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		136F24E930593DFE0072EEDF = {
+			isa = PBXGroup;
+			children = (
+				136F24F430593DFE0072EEDF /* iiDENTIFiiCaptureYNC */,
+				136F250230593DFF0072EEDF /* iiDENTIFiiCaptureYNCTests */,
+				136F250C30593DFF0072EEDF /* iiDENTIFiiCaptureYNCUITests */,
+				136F24F330593DFE0072EEDF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		136F24F330593DFE0072EEDF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				136F24F230593DFE0072EEDF /* iiDENTIFiiCaptureYNC.app */,
+				136F24FF30593DFF0072EEDF /* iiDENTIFiiCaptureYNCTests.xctest */,
+				136F250930593DFF0072EEDF /* iiDENTIFiiCaptureYNCUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		136F24F130593DFE0072EEDF /* iiDENTIFiiCaptureYNC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 136F251130593DFF0072EEDF /* Build configuration list for PBXNativeTarget "iiDENTIFiiCaptureYNC" */;
+			buildPhases = (
+				136F24EE30593DFE0072EEDF /* Sources */,
+				136F24EF30593DFE0072EEDF /* Frameworks */,
+				136F24F030593DFE0072EEDF /* Resources */,
+			);
+			buildRules = (
+			);
+			fileSystemSynchronizedGroups = (
+				136F24F430593DFE0072EEDF /* iiDENTIFiiCaptureYNC */,
+			);
+			name = iiDENTIFiiCaptureYNC;
+			productName = iiDENTIFiiCaptureYNC;
+			productReference = 136F24F230593DFE0072EEDF /* iiDENTIFiiCaptureYNC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		136F24FE30593DFF0072EEDF /* iiDENTIFiiCaptureYNCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 136F251430593DFF0072EEDF /* Build configuration list for PBXNativeTarget "iiDENTIFiiCaptureYNCTests" */;
+			buildPhases = (
+				136F24FB30593DFF0072EEDF /* Sources */,
+				136F24FC30593DFF0072EEDF /* Frameworks */,
+				136F24FD30593DFF0072EEDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				136F250130593DFF0072EEDF /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				136F250230593DFF0072EEDF /* iiDENTIFiiCaptureYNCTests */,
+			);
+			name = iiDENTIFiiCaptureYNCTests;
+			productName = iiDENTIFiiCaptureYNCTests;
+			productReference = 136F24FF30593DFF0072EEDF /* iiDENTIFiiCaptureYNCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		136F250830593DFF0072EEDF /* iiDENTIFiiCaptureYNCUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 136F251730593DFF0072EEDF /* Build configuration list for PBXNativeTarget "iiDENTIFiiCaptureYNCUITests" */;
+			buildPhases = (
+				136F250530593DFF0072EEDF /* Sources */,
+				136F250630593DFF0072EEDF /* Frameworks */,
+				136F250730593DFF0072EEDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				136F250B30593DFF0072EEDF /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				136F250C30593DFF0072EEDF /* iiDENTIFiiCaptureYNCUITests */,
+			);
+			name = iiDENTIFiiCaptureYNCUITests;
+			productName = iiDENTIFiiCaptureYNCUITests;
+			productReference = 136F250930593DFF0072EEDF /* iiDENTIFiiCaptureYNCUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		136F24EA30593DFE0072EEDF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2700;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					136F24F130593DFE0072EEDF = {
+						CreatedOnToolsVersion = 27.0;
+					};
+					136F24FE30593DFF0072EEDF = {
+						CreatedOnToolsVersion = 27.0;
+						TestTargetID = 136F24F130593DFE0072EEDF;
+					};
+					136F250830593DFF0072EEDF = {
+						CreatedOnToolsVersion = 27.0;
+						TestTargetID = 136F24F130593DFE0072EEDF;
+					};
+				};
+			};
+			buildConfigurationList = 136F24ED30593DFE0072EEDF /* Build configuration list for PBXProject "iiDENTIFiiCaptureYNC" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 136F24E930593DFE0072EEDF;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 136F24F330593DFE0072EEDF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				136F24F130593DFE0072EEDF /* iiDENTIFiiCaptureYNC */,
+				136F24FE30593DFF0072EEDF /* iiDENTIFiiCaptureYNCTests */,
+				136F250830593DFF0072EEDF /* iiDENTIFiiCaptureYNCUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		136F24F030593DFE0072EEDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		136F24FD30593DFF0072EEDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		136F250730593DFF0072EEDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		136F24EE30593DFE0072EEDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+		136F24FB30593DFF0072EEDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+		136F250530593DFF0072EEDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		136F250130593DFF0072EEDF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 136F24F130593DFE0072EEDF /* iiDENTIFiiCaptureYNC */;
+			targetProxy = 136F250030593DFF0072EEDF /* PBXContainerItemProxy */;
+		};
+		136F250B30593DFF0072EEDF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 136F24F130593DFE0072EEDF /* iiDENTIFiiCaptureYNC */;
+			targetProxy = 136F250A30593DFF0072EEDF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		136F250F30593DFF0072EEDF /* Debug configuration for PBXProject "iiDENTIFiiCaptureYNC" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 69RBPY83K7;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		136F251030593DFF0072EEDF /* Release configuration for PBXProject "iiDENTIFiiCaptureYNC" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 69RBPY83K7;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		136F251230593DFF0072EEDF /* Debug configuration for PBXNativeTarget "iiDENTIFiiCaptureYNC" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 69RBPY83K7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yinainchen.iiDENTIFiiCaptureYNC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		136F251330593DFF0072EEDF /* Release configuration for PBXNativeTarget "iiDENTIFiiCaptureYNC" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 69RBPY83K7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yinainchen.iiDENTIFiiCaptureYNC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		136F251530593DFF0072EEDF /* Debug configuration for PBXNativeTarget "iiDENTIFiiCaptureYNCTests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 69RBPY83K7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yinainchen.iiDENTIFiiCaptureYNCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iiDENTIFiiCaptureYNC.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iiDENTIFiiCaptureYNC";
+			};
+			name = Debug;
+		};
+		136F251630593DFF0072EEDF /* Release configuration for PBXNativeTarget "iiDENTIFiiCaptureYNCTests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 69RBPY83K7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yinainchen.iiDENTIFiiCaptureYNCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iiDENTIFiiCaptureYNC.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iiDENTIFiiCaptureYNC";
+			};
+			name = Release;
+		};
+		136F251830593DFF0072EEDF /* Debug configuration for PBXNativeTarget "iiDENTIFiiCaptureYNCUITests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 69RBPY83K7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yinainchen.iiDENTIFiiCaptureYNCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = iiDENTIFiiCaptureYNC;
+			};
+			name = Debug;
+		};
+		136F251930593DFF0072EEDF /* Release configuration for PBXNativeTarget "iiDENTIFiiCaptureYNCUITests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 69RBPY83K7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yinainchen.iiDENTIFiiCaptureYNCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = iiDENTIFiiCaptureYNC;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		136F24ED30593DFE0072EEDF /* Build configuration list for PBXProject "iiDENTIFiiCaptureYNC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				136F250F30593DFF0072EEDF /* Debug configuration for PBXProject "iiDENTIFiiCaptureYNC" */,
+				136F251030593DFF0072EEDF /* Release configuration for PBXProject "iiDENTIFiiCaptureYNC" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		136F251130593DFF0072EEDF /* Build configuration list for PBXNativeTarget "iiDENTIFiiCaptureYNC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				136F251230593DFF0072EEDF /* Debug configuration for PBXNativeTarget "iiDENTIFiiCaptureYNC" */,
+				136F251330593DFF0072EEDF /* Release configuration for PBXNativeTarget "iiDENTIFiiCaptureYNC" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		136F251430593DFF0072EEDF /* Build configuration list for PBXNativeTarget "iiDENTIFiiCaptureYNCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				136F251530593DFF0072EEDF /* Debug configuration for PBXNativeTarget "iiDENTIFiiCaptureYNCTests" */,
+				136F251630593DFF0072EEDF /* Release configuration for PBXNativeTarget "iiDENTIFiiCaptureYNCTests" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		136F251730593DFF0072EEDF /* Build configuration list for PBXNativeTarget "iiDENTIFiiCaptureYNCUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				136F251830593DFF0072EEDF /* Debug configuration for PBXNativeTarget "iiDENTIFiiCaptureYNCUITests" */,
+				136F251930593DFF0072EEDF /* Release configuration for PBXNativeTarget "iiDENTIFiiCaptureYNCUITests" */,
+			);
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 136F24EA30593DFE0072EEDF /* Project object */;
+	validationLevel = 1;
+}
