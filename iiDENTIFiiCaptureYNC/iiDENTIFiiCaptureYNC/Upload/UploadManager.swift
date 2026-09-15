@@ -13,16 +13,19 @@ import Foundation
 // UploadManager is an actor -> to guarantee that only one piece of code is running here at any given moment to prevent race conditions.
 // resetStaleUploadingItemsAtLaunch() -> Safety net to make sure states get reset to .pending if there are items on app launch that have the states of .uploading
 // handleDidEnterBackground() -> Handles the backgrounding of the app, by cancelling the uploading process and setting states to .pending so that a relaunch or foregrounding will retry uplaod of items that are in .pending state. Done so that it is deterministic when an app gets backgrounded, and not having to deal with the window of proccesses in flight when in background.
+// guard connectivity.isSatisfied else { return } calls on ConnectivityMonitor to check the real state of network on the phone. This is due to the local HTTP server that bypasses Airplane mode, so we have to check for the real network state if Airplane mode is on. This isn't a problem when we have a real backend service.
 actor UploadManager {
     private let persistenceController: PersistenceController
     private let transport: UploadTransport
+    private let connectivity: ConnectivityProviding
     private var inFlightTasks: [NSManagedObjectID: Task<Void, Never>] = [:]
 
     private var context: NSManagedObjectContext { persistenceController.backgroundContext }
 
-    init(persistenceController: PersistenceController, transport: UploadTransport) {
+    init(persistenceController: PersistenceController, transport: UploadTransport, connectivity: ConnectivityProviding) {
         self.persistenceController = persistenceController
         self.transport = transport
+        self.connectivity = connectivity
     }
 
     func resetStaleUploadingItemsAtLaunch() async {
@@ -95,6 +98,8 @@ actor UploadManager {
             )
             guard dueForRetry else { return }
         }
+
+        guard connectivity.isSatisfied else { return }
 
         await markUploading(itemID: itemID)
         guard !Task.isCancelled else { return }
