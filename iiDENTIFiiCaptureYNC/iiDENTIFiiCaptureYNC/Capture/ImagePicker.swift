@@ -12,9 +12,11 @@ import UIKit
 // NOTES:
 // Wrap the image picker view in UIViewControllerRepresentable to work for SwiftUI
 struct ImagePickerView: UIViewControllerRepresentable {
-    enum Source {
+    enum Source: Identifiable, Hashable {
         case camera
         case photoLibrary
+
+        var id: Self { self }
     }
 
     let source: Source
