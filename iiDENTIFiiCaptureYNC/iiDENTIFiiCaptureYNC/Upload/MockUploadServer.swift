@@ -16,6 +16,10 @@ nonisolated final class MockUploadServer: @unchecked Sendable {
     private var listener: NWListener?
     private let queue = DispatchQueue(label: "MockUploadServer")
 
+    // NOTES:
+    // Loopback traffic is near-instant, which would otherwise make pending/uploading flash by too fast to see. This artificial delay makes the mock behave more like a real network.
+    var simulatedLatency: TimeInterval = 3
+
     var uploadURL: URL {
         URL(string: "http://127.0.0.1:\(port)/upload")!
     }
@@ -68,7 +72,9 @@ nonisolated final class MockUploadServer: @unchecked Sendable {
             }
 
             if let response = self.completedResponse(for: newBuffer) {
-                self.send(response, on: connection)
+                self.queue.asyncAfter(deadline: .now() + self.simulatedLatency) {
+                    self.send(response, on: connection)
+                }
                 return
             }
 

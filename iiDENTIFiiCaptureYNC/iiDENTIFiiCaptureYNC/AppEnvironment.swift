@@ -37,6 +37,10 @@ final class AppEnvironment {
 
         await uploadManager.resetStaleUploadingItemsAtLaunch()
 
+        // NOTES:
+        // This sleep delay is to aid in visually seeing that the mid flight upload that gets killed on app force quit sets back to pending state and after the delay the upload will trigger again.
+        try? await Task.sleep(for: .seconds(3))
+
         connectivityMonitor.start {
             Task { await uploadManager.attemptAllPending() }
         }
