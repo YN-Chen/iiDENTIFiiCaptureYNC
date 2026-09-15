@@ -29,9 +29,22 @@
 		136F250930593DFF0072EEDF /* iiDENTIFiiCaptureYNCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iiDENTIFiiCaptureYNCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		136F253730594F990072EEDF /* Exceptions for "iiDENTIFiiCaptureYNC" folder in "iiDENTIFiiCaptureYNC" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 136F24F130593DFE0072EEDF /* iiDENTIFiiCaptureYNC */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		136F24F430593DFE0072EEDF /* iiDENTIFiiCaptureYNC */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				136F253730594F990072EEDF /* Exceptions for "iiDENTIFiiCaptureYNC" folder in "iiDENTIFiiCaptureYNC" target */,
+			);
 			path = iiDENTIFiiCaptureYNC;
 			sourceTree = "<group>";
 		};
@@ -374,6 +387,8 @@
 				DEVELOPMENT_TEAM = 69RBPY83K7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iiDENTIFiiCaptureYNC/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Used to capture identity documents and selfies.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -406,6 +421,8 @@
 				DEVELOPMENT_TEAM = 69RBPY83K7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iiDENTIFiiCaptureYNC/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Used to capture identity documents and selfies.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
