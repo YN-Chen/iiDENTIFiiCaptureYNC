@@ -20,6 +20,18 @@ nonisolated final class MockUploadServer: @unchecked Sendable {
     // Loopback traffic is near-instant, which would otherwise make pending/uploading flash by too fast to see. This artificial delay makes the mock behave more like a real network.
     var simulatedLatency: TimeInterval = 3
 
+    // NOTES:
+    // QA hook, toggled from the shake-to-reveal debug menu, while enabled, every
+    // upload gets a 500 instead of 200, so the failed/retry UI can be seen on
+    // demand without editing code and rebuilding.
+    private var forceFailureEnabled = false
+
+    func setForceFailure(_ enabled: Bool) {
+        queue.async { [weak self] in
+            self?.forceFailureEnabled = enabled
+        }
+    }
+
     var uploadURL: URL {
         URL(string: "http://127.0.0.1:\(port)/upload")!
     }
@@ -99,7 +111,7 @@ nonisolated final class MockUploadServer: @unchecked Sendable {
         let bodyLength = buffer.distance(from: headerEndRange.upperBound, to: buffer.endIndex)
         guard bodyLength >= contentLength else { return nil }
 
-        return Self.okResponse()
+        return forceFailureEnabled ? Self.errorResponse() : Self.okResponse()
     }
 
     private static func contentLength(fromHeaders headerString: String) -> Int {
@@ -116,6 +128,12 @@ nonisolated final class MockUploadServer: @unchecked Sendable {
     private static func okResponse() -> Data {
         let body = "{\"status\":\"ok\"}"
         let response = "HTTP/1.1 200 OK\r\nContent-Type: application/json\r\nContent-Length: \(body.utf8.count)\r\nConnection: close\r\n\r\n\(body)"
+        return Data(response.utf8)
+    }
+
+    private static func errorResponse() -> Data {
+        let body = "{\"status\":\"error\"}"
+        let response = "HTTP/1.1 500 Internal Server Error\r\nContent-Type: application/json\r\nContent-Length: \(body.utf8.count)\r\nConnection: close\r\n\r\n\(body)"
         return Data(response.utf8)
     }
 

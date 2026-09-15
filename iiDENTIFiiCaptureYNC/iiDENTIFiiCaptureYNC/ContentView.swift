@@ -14,6 +14,7 @@ struct ContentView: View {
 
     @State private var isShowingSourcePicker = false
     @State private var activeSource: ImagePickerView.Source?
+    @State private var isShowingDebugMenu = false
 
     var body: some View {
         NavigationStack {
@@ -58,6 +59,10 @@ struct ContentView: View {
                     onCancel: { activeSource = nil }
                 )
                 .ignoresSafeArea()
+            }
+            .onShake { isShowingDebugMenu = true }
+            .sheet(isPresented: $isShowingDebugMenu) {
+                DebugMenuView()
             }
         }
     }

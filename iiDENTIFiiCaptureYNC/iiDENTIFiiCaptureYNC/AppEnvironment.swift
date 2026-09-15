@@ -22,6 +22,13 @@ final class AppEnvironment {
 
     private init() {}
 
+    private(set) var isForcingUploadFailure = false
+
+    func setForcingUploadFailure(_ enabled: Bool) {
+        isForcingUploadFailure = enabled
+        mockServer.setForceFailure(enabled)
+    }
+
     func start() async {
         guard uploadManager == nil else { return }
 
